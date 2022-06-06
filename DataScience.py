@@ -45,8 +45,17 @@ Nissan.insert(0,'Nissan')
 Honda.insert(0,'Honda')
 Ford.insert(0,'Ford')
 List2 = [Toyota,Volkswagen,Nissan,Honda,Ford]
-print(List2)
 answer_dict.update({"Q6" : List2 })
 ######### Q7
+
+
+
+import pickle
+
+file_name = "Angel_Ruvalcaba_answers.pkl"
+path = "D:\Repositorios\DataEngineeringBootcamp\DataScience.py"
+
+with open(path+file_name, 'wb') as f:
+    pickle.dump(answer_dict, f, protocol=pickle.HIGHEST_PROTOCOL)
 
 
